@@ -1,0 +1,23 @@
+variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+
+before_script:
+    - git clone --branch=master --depth=1 --quiet git@git.simonkraft.com:meta/deploy-script.git
+    - chmod +x deploy-script/*.sh
+
+stages:
+    - production
+
+production:
+    stage: production
+    
+    script:
+        - cd deploy-script
+        - ./deploy.sh -u check -d $DEPLOY_PATH -h $DEPLOY_SERVER --theme
+    
+    only:
+        - new
+
+    variables:
+        DEPLOY_PATH: /sites/check.kunde.corevalue.agency/files/
+        DEPLOY_SERVER: okeanos.simonkraft.com
