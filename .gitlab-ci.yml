@@ -16,7 +16,7 @@ production:
         - ./deploy.sh -u check -d $DEPLOY_PATH -h $DEPLOY_SERVER --theme
     
     only:
-        - new
+        - master
 
     variables:
         DEPLOY_PATH: /sites/check.kunde.corevalue.agency/files/
