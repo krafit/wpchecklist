@@ -4,7 +4,7 @@
     justify-content: space-between;
     margin: 3rem 0 1rem 0;
     &:after {
-        content: 'hide';
+        content: 'ausblenden';
         font-size: 18px;
 //        color: #B1B1B1;
         opacity: 0.6;
@@ -31,7 +31,7 @@ input.section:focus + label.section-header:after {
 }
 
 input.section:checked + label.section-header:after {
-    content: 'show';
+    content: 'einblenden';
 }
 
 input#formatting-seo:checked ~ section.formatting,
