@@ -19,5 +19,5 @@ production:
         - master
 
     variables:
-        DEPLOY_PATH: /sites/check.kunde.corevalue.agency/files/
+        DEPLOY_PATH: /sites/wpcheckliste.de/files/
         DEPLOY_SERVER: okeanos.simonkraft.com
