@@ -44,66 +44,65 @@
         </header>
 
         <main id="main">
-            <input id="formatting-seo" type="checkbox" class="section">
-            <label for="formatting-seo" class="section-header"><span role="heading" aria-level="3">Formatierung und SEO</span></label>
-            <section class="formatting" aria-label="Formatierungs-Checkliste">
-                <article  class="checklist-item">
-                    <input id="language" type="checkbox">
-                    <label for="language" class="tickoff"><span role="heading" aria-level="4">Gib die Sprache deiner Website an</span></label>
-                    <p>Stell sicher, dass <code>language_attributes()</code> im Code deines Themes angegeben ist. Das hilft nicht nur Menschen mit Screen-Readern, sondern auch Übersetzungs-Tools und Google zu verstehen, welche Sprache deine Seite hat.</p>
-                    <ul>
-                        <li>Lies die Dokumentation zu <a rel="noopener" target="_blank" href="https://developer.wordpress.org/reference/functions/language_attributes/">Language Attributes</a></li>
-                        <li><a href="https://de.wordpress.org/plugins/chl-change-html-lang/" rel="noopener">Change HTML Lang</a> – ein wirklich praktisches Plugin, das dir hilft die Sprache deiner Seite zu Setzen oder zu ändern, ohne Code anfassen zu müssen.</li>
-                    </ul>
-                </article>
-                <article class="checklist-item">
-                    <input id="seo" type="checkbox">
-                    <label for="seo" class="tickoff"><span role="heading" aria-level="4">SEO</span></label>
-                    <p>Du willst, dass deine Seite gefunden wird? Installier ein SEO-Plugin, dass dir dabei hilft und dich beim Schreiben und anpassen deiner Inhalte an der Hand nimmt. Stell sicher, dass du alle wichtigen Informationen wie Meta-Beschreibung, Open-Graph-Titel und Bilder für alle Inhalte angibst. Vielleicht ist eines dieser Plugins etwas für dich:</p>
-                    <ul>
-                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/wordpress-seo/">Yoast SEO</a></li>
-                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/autodescription/">The SEO Framework</a></li>
-                    </ul>
-                </article>
-                <article class="checklist-item">
-                    <input id="metatags" type="checkbox">
-                    <label for="metatags" class="tickoff"><span role="heading" aria-level="4">Meta-Tags</span></label>
-                    <p>Wenn du ein SEO-Plugin installiert und richtig konfigueirt hast, solltest du hier eigentlich keine Probleme haben. Aber wirf doch trotzdem nochmal einen Blick drauf und stell sicher, dass es mit den Meta-Tags auf deiner Seite keinen Ärger gibt.</p>
-                    <ul>
-                        <li><a rel="noopener" target="_blank" href="https://www.heymeta.com">Hey Meta</a> – zeigt dir, wie deine Seite in Social-Media aussieht und was für Basis-Tags du hast.</li>
-                        <li><a rel="noopener" target="_blank" href="https://developers.facebook.com/tools/debug/sharing/">Facebook debugger</a> – zeigt dir <em>ganz genau</em> wir deine Seite auf Facebook aussieht und lässt sich sogar den Facebook-Cache für deine Seite leeren, wenn du etwas änderst.</li>
-                    </ul>
-                </article>
-                <article class="checklist-item">
-                    <input id="links" type="checkbox">
-                    <label for="links" class="tickoff"><span role="heading" aria-level="4">Links</span></label>
-                    <p>Funktionieren alle Links auf deiner Seite noch? Es kommt häufig vor, dass verlinkte Seiten einfach nicht mehr exisiteren und Links ins Leere laufen. Wenn du auf deiner eigenen Website Seiten umbenennst, kann es auch zu Problemen kommen. Auch hier gibt es ein Plugin, dass dir helfen kann:</p>
-                    <ul>
-                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/redirection/">Redirection</a> – Dieses Plugin überprüft 404-Fehler auf deiner Seite, fängt URL-Änderungen ab und leitet sie automatisch um, außerdem kannst du auch eigene Weiterleitungen einrichten.</li>
-                    </ul>
-                </article>
-                <article class="checklist-item">
-                    <input id="favicon" type="checkbox">
-                    <label for="favicon" class="tickoff"><span role="heading" aria-level="4">Favicon</span></label>
-                    <p>Hast du ein Favicon eingerichtet? Schau unter <em>Themes</em> > <em>Customize</em> > <em>Website-Informationen</em> nach und wähle ein <strong>Website-Icon</strong> aus, wenn keins ausgewählt ist. Das Bild, das du hier auswählst wird als Favicon (und auf iPhones und Andorid-Geräten manchmal auch auf dem Homescreen) ausgegeben.</p>
-                    <ul>
-                        <li><a rel="noopener" target="_blank" href="https://wordpress.org/support/article/creating-a-favicon/">Schritt für Schritt Anleitung</a> zur Einrichtung eines Website-Icons.</li>
-                    </ul>
-                </article>
-                <article class="checklist-item">
-                    <input id="responsive" type="checkbox">
-                    <label for="responsive" class="tickoff"><span role="heading" aria-level="4">Responsive Webdesign</span></label>
-                    <p>Ist deine Webseite responsive? Sie sollte es sein! Nutze CSS Media-Queries und <em>bitte bitte</em> schau nochmal nach, ob der Zoom auf der Seite wirklich <em>nicht</em> abgeschaltet ist. Schau dir die Seite im Responsive-Modus der Developer-Tools in deinem Browser an.</p>
-                    <ul>
-                        <li><a rel="noopener" target="_blank" href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/">Responsive Web Design</a> – eine wirklich tolle Einführung ins Thema von Smashing Magazine.</li>
-                        <li><a rel="noopener" target="_blank" href="https://developer.mozilla.org/de/docs/Web/CSS/Media_Queries/Using_media_queries">CSS Media Queries</a> – eine hilfreiche Referenz zum Einsatz dieser praktischen Queries!</li>
-                        <li><a rel="noopener" target="_blank" href="https://search.google.com/test/mobile-friendly">Teste deine Website</a> – mit dem <em>Mobile Friendly</em> Test von Google</li>
-                        <li><a rel="noopener" target="_blank" href="https://adrianroselli.com/2015/10/dont-disable-zoom.html">Don't Disable Zoom</a> – in diesem Artikel erfährst du, warum es wirklich wirklich schlecht ist, Zommen auf deiner Seite zu unterbinden.</li>
-                    </ul>
-                </article>
 
+            <input id="security" type="checkbox" class="section">
+            <label for="security" class="section-header"><span role="heading" aria-level="3">Sicherheit</span></label>
+            <section class="security" aria-label="Security Checklist">
+                <article class="checklist-item">
+                    <input id="ssl" type="checkbox">
+                    <label for="ssl" class="tickoff"><span role="heading" aria-level="4">SSL: Sicher deine Seite!</span></label>
+                    <p>Wir haben das Jahr 2020. Let's Encrypt existiert! Und es ist kostenlos! Wenn dein Hoster noch kein Let's encrypt oder andere kostenlose Möglichkeiten für kostenlose SSL-Zertifikate unterstützt ist es <strong>Zeit zu wechseln</strong>.</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://www.ssl.com/faqs/faq-what-is-ssl/">SSL Erklärt</a></li>
+                        <li><a rel="noopener" target="_blank" href="https://letsencrypt.org/about/">About Let's Encrypt SSL</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="backups" type="checkbox">
+                    <label for="backups" class="tickoff"><span role="heading" aria-level="4">Regelmäßige Backups</span></label>
+                    <p>Jemand oder etwas sollte regelämßig ein Backup deiner Seite anlegen. Und damit meine ich, nicht auf dem selben Server. Wenn deine Backups nur auf dem System liegen, auf dem deine Website läuft, gehen sie im blödesten Fall zusammen mit der Website verloren.</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="http://de.wordpress.org/plugins/backwpup/">BackWPup</a> – Backup-Plugin mit vielen Möglichkeiten für Off-Site-Backups.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="latestwp" type="checkbox">
+                    <label for="latestwp" class="tickoff"><span role="heading" aria-level="4">Nutzt du die neueste WordPress Version?</span></label>
+                    <p>WordPress aktuell zu halten ist wichgtig, um deine Seite sicher zu halten!</p>
+                </article>
+                <article class="checklist-item">
+                    <input id="noadmin" type="checkbox">
+                    <label for="noadmin" class="tickoff"><span role="heading" aria-level="4">Kein <em>admin</em> Benutzer!</span></label>
+                    <p>Einer einfachen Form von Brute-Force-Attacke kannst du ohne großen Aufwand entgehen. Nutz einfach niemals einen Benutzer mit dem Namen <em>admin</em>, wenn du schon einen Benutzer mit diesem Namen hast, lohnt es sich, einen neuen Account anzulegen und den alten zu löschen.</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://make.wordpress.org/support/user-manual/customizing-wordpress/managing-users-on-your-wordpress-site/adding-users-to-your-wordpress-site/">Neue Benutzer anlegen</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="unused" type="checkbox">
+                    <label for="unused" class="tickoff"><span role="heading" aria-level="4">Entferne unbenutzte Themes und Plugins</span></label>
+                    <p>Bis auf ein Standard-Theme solltest du alle inaktiven Themes entfernen. Wirf außerdem alle inaktiven Plugins raus und schau die Liste der aktiven Plugins nochmal genau durch. Sind die wirklich alle nötig?</p>
+                </article>
+                <article class="checklist-item">
+                    <input id="update" type="checkbox">
+                    <label for="update" class="tickoff"><span role="heading" aria-level="4">Themes und Plugins aktualisieren</span></label>
+                    <p>Halte deine Plugins und Themes auf dem neuesten Stand. Vorab solltest du aber ein Backup der Installation machen. Bonuspunkte gibt es für einen Test auf einem extra Testsystem.</p>
+                </article>
+                <article class="checklist-item">
+                    <input id="strongp" type="checkbox">
+                    <label for="strongp" class="tickoff"><span role="heading" aria-level="4">Nutze sichere Passwörter</span></label>
+                    <p>Nur starke Passwörter sind sichere Passwörter! Das gilt nicht nur für dich, sondern auch für alle anderen Benutzer deiner Website.</p>
+                </article>
+                <article class="checklist-item">
+                    <input id="limitlogin" type="checkbox">
+                    <label for="limitlogin" class="tickoff"><span role="heading" aria-level="4">Limit Login Attempts</span></label>
+                    <p>Sehr hilfreiches Plugin, das viele Attacken auf deine Seite schon im Keim ersticken kann.</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/limit-login-attempts-reloaded/">Limit login attempts reloaded Plugin</a></li>
+                    </ul>
+                </article>
             </section>
-            
+
             <input id="performance" type="checkbox" class="section">
             <label for="performance" class="section-header"><span role="heading" aria-level="3">Performance und Ladezeit</span></label>
             <section class="performance" aria-label="Performance-Checkliste">
@@ -179,6 +178,66 @@
                         <li><a rel="noopener" target="_blank" href="https://tools.pingdom.com">Pingdom Website Speed Test</a> – übersichtlicher Test mit verständlicher Auwertung.</li>
                     </ul>
                 </article>
+            </section>
+
+            <input id="formatting-seo" type="checkbox" class="section">
+            <label for="formatting-seo" class="section-header"><span role="heading" aria-level="3">Formatierung und SEO</span></label>
+            <section class="formatting" aria-label="Formatierungs-Checkliste">
+                <article  class="checklist-item">
+                    <input id="language" type="checkbox">
+                    <label for="language" class="tickoff"><span role="heading" aria-level="4">Gib die Sprache deiner Website an</span></label>
+                    <p>Stell sicher, dass <code>language_attributes()</code> im Code deines Themes angegeben ist. Das hilft nicht nur Menschen mit Screen-Readern, sondern auch Übersetzungs-Tools und Google zu verstehen, welche Sprache deine Seite hat.</p>
+                    <ul>
+                        <li>Lies die Dokumentation zu <a rel="noopener" target="_blank" href="https://developer.wordpress.org/reference/functions/language_attributes/">Language Attributes</a></li>
+                        <li><a href="https://de.wordpress.org/plugins/chl-change-html-lang/" rel="noopener">Change HTML Lang</a> – ein wirklich praktisches Plugin, das dir hilft die Sprache deiner Seite zu Setzen oder zu ändern, ohne Code anfassen zu müssen.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="seo" type="checkbox">
+                    <label for="seo" class="tickoff"><span role="heading" aria-level="4">SEO</span></label>
+                    <p>Du willst, dass deine Seite gefunden wird? Installier ein SEO-Plugin, dass dir dabei hilft und dich beim Schreiben und anpassen deiner Inhalte an der Hand nimmt. Stell sicher, dass du alle wichtigen Informationen wie Meta-Beschreibung, Open-Graph-Titel und Bilder für alle Inhalte angibst. Vielleicht ist eines dieser Plugins etwas für dich:</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/wordpress-seo/">Yoast SEO</a></li>
+                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/autodescription/">The SEO Framework</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="metatags" type="checkbox">
+                    <label for="metatags" class="tickoff"><span role="heading" aria-level="4">Meta-Tags</span></label>
+                    <p>Wenn du ein SEO-Plugin installiert und richtig konfigueirt hast, solltest du hier eigentlich keine Probleme haben. Aber wirf doch trotzdem nochmal einen Blick drauf und stell sicher, dass es mit den Meta-Tags auf deiner Seite keinen Ärger gibt.</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://www.heymeta.com">Hey Meta</a> – zeigt dir, wie deine Seite in Social-Media aussieht und was für Basis-Tags du hast.</li>
+                        <li><a rel="noopener" target="_blank" href="https://developers.facebook.com/tools/debug/sharing/">Facebook debugger</a> – zeigt dir <em>ganz genau</em> wir deine Seite auf Facebook aussieht und lässt sich sogar den Facebook-Cache für deine Seite leeren, wenn du etwas änderst.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="links" type="checkbox">
+                    <label for="links" class="tickoff"><span role="heading" aria-level="4">Links</span></label>
+                    <p>Funktionieren alle Links auf deiner Seite noch? Es kommt häufig vor, dass verlinkte Seiten einfach nicht mehr exisiteren und Links ins Leere laufen. Wenn du auf deiner eigenen Website Seiten umbenennst, kann es auch zu Problemen kommen. Auch hier gibt es ein Plugin, dass dir helfen kann:</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/redirection/">Redirection</a> – Dieses Plugin überprüft 404-Fehler auf deiner Seite, fängt URL-Änderungen ab und leitet sie automatisch um, außerdem kannst du auch eigene Weiterleitungen einrichten.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="favicon" type="checkbox">
+                    <label for="favicon" class="tickoff"><span role="heading" aria-level="4">Favicon</span></label>
+                    <p>Hast du ein Favicon eingerichtet? Schau unter <em>Themes</em> > <em>Customize</em> > <em>Website-Informationen</em> nach und wähle ein <strong>Website-Icon</strong> aus, wenn keins ausgewählt ist. Das Bild, das du hier auswählst wird als Favicon (und auf iPhones und Andorid-Geräten manchmal auch auf dem Homescreen) ausgegeben.</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://wordpress.org/support/article/creating-a-favicon/">Schritt für Schritt Anleitung</a> zur Einrichtung eines Website-Icons.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="responsive" type="checkbox">
+                    <label for="responsive" class="tickoff"><span role="heading" aria-level="4">Responsive Webdesign</span></label>
+                    <p>Ist deine Webseite responsive? Sie sollte es sein! Nutze CSS Media-Queries und <em>bitte bitte</em> schau nochmal nach, ob der Zoom auf der Seite wirklich <em>nicht</em> abgeschaltet ist. Schau dir die Seite im Responsive-Modus der Developer-Tools in deinem Browser an.</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/">Responsive Web Design</a> – eine wirklich tolle Einführung ins Thema von Smashing Magazine.</li>
+                        <li><a rel="noopener" target="_blank" href="https://developer.mozilla.org/de/docs/Web/CSS/Media_Queries/Using_media_queries">CSS Media Queries</a> – eine hilfreiche Referenz zum Einsatz dieser praktischen Queries!</li>
+                        <li><a rel="noopener" target="_blank" href="https://search.google.com/test/mobile-friendly">Teste deine Website</a> – mit dem <em>Mobile Friendly</em> Test von Google</li>
+                        <li><a rel="noopener" target="_blank" href="https://adrianroselli.com/2015/10/dont-disable-zoom.html">Don't Disable Zoom</a> – in diesem Artikel erfährst du, warum es wirklich wirklich schlecht ist, Zommen auf deiner Seite zu unterbinden.</li>
+                    </ul>
+                </article>
+
             </section>
 
             <input id="a11y" type="checkbox" class="section">
@@ -267,64 +326,6 @@
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a></li>
                         <li><a rel="noopener" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a></li>
-                    </ul>
-                </article>
-            </section>
-
-            <input id="security" type="checkbox" class="section">
-            <label for="security" class="section-header"><span role="heading" aria-level="3">Sicherheit</span></label>
-            <section class="security" aria-label="Security Checklist">
-                <article class="checklist-item">
-                    <input id="ssl" type="checkbox">
-                    <label for="ssl" class="tickoff"><span role="heading" aria-level="4">SSL: Sicher deine Seite!</span></label>
-                    <p>Wir haben das Jahr 2020. Let's Encrypt existiert! Und es ist kostenlos! Wenn dein Hoster noch kein Let's encrypt oder andere kostenlose Möglichkeiten für kostenlose SSL-Zertifikate unterstützt ist es <strong>Zeit zu wechseln</strong>.</p>
-                    <ul>
-                        <li><a rel="noopener" target="_blank" href="https://www.ssl.com/faqs/faq-what-is-ssl/">SSL Erklärt</a></li>
-                        <li><a rel="noopener" target="_blank" href="https://letsencrypt.org/about/">About Let's Encrypt SSL</a></li>
-                    </ul>
-                </article>
-                <article class="checklist-item">
-                    <input id="backups" type="checkbox">
-                    <label for="backups" class="tickoff"><span role="heading" aria-level="4">Regelmäßige Backups</span></label>
-                    <p>Jemand oder etwas sollte regelämßig ein Backup deiner Seite anlegen. Und damit meine ich, nicht auf dem selben Server. Wenn deine Backups nur auf dem System liegen, auf dem deine Website läuft, gehen sie im blödesten Fall zusammen mit der Website verloren.</p>
-                    <ul>
-                        <li><a rel="noopener" target="_blank" href="http://de.wordpress.org/plugins/backwpup/">BackWPup</a> – Backup-Plugin mit vielen Möglichkeiten für Off-Site-Backups.</li>
-                    </ul>
-                </article>
-                <article class="checklist-item">
-                    <input id="latestwp" type="checkbox">
-                    <label for="latestwp" class="tickoff"><span role="heading" aria-level="4">Nutzt du die neueste WordPress Version?</span></label>
-                    <p>WordPress aktuell zu halten ist wichgtig, um deine Seite sicher zu halten!</p>
-                </article>
-                <article class="checklist-item">
-                    <input id="noadmin" type="checkbox">
-                    <label for="noadmin" class="tickoff"><span role="heading" aria-level="4">Kein <em>admin</em> Benutzer!</span></label>
-                    <p>Einer einfachen Form von Brute-Force-Attacke kannst du ohne großen Aufwand entgehen. Nutz einfach niemals einen Benutzer mit dem Namen <em>admin</em>, wenn du schon einen Benutzer mit diesem Namen hast, lohnt es sich, einen neuen Account anzulegen und den alten zu löschen.</p>
-                    <ul>
-                        <li><a rel="noopener" target="_blank" href="https://make.wordpress.org/support/user-manual/customizing-wordpress/managing-users-on-your-wordpress-site/adding-users-to-your-wordpress-site/">Neue Benutzer anlegen</a></li>
-                    </ul>
-                </article>
-                <article class="checklist-item">
-                    <input id="unused" type="checkbox">
-                    <label for="unused" class="tickoff"><span role="heading" aria-level="4">Entferne unbenutzte Themes und Plugins</span></label>
-                    <p>Bis auf ein Standard-Theme solltest du alle inaktiven Themes entfernen. Wirf außerdem alle inaktiven Plugins raus und schau die Liste der aktiven Plugins nochmal genau durch. Sind die wirklich alle nötig?</p>
-                </article>
-                <article class="checklist-item">
-                    <input id="update" type="checkbox">
-                    <label for="update" class="tickoff"><span role="heading" aria-level="4">Themes und Plugins aktualisieren</span></label>
-                    <p>Halte deine Plugins und Themes auf dem neuesten Stand. Vorab solltest du aber ein Backup der Installation machen. Bonuspunkte gibt es für einen Test auf einem extra Testsystem.</p>
-                </article>
-                <article class="checklist-item">
-                    <input id="strongp" type="checkbox">
-                    <label for="strongp" class="tickoff"><span role="heading" aria-level="4">Nutze sichere Passwörter</span></label>
-                    <p>Nur starke Passwörter sind sichere Passwörter! Das gilt nicht nur für dich, sondern auch für alle anderen Benutzer deiner Website.</p>
-                </article>
-                <article class="checklist-item">
-                    <input id="limitlogin" type="checkbox">
-                    <label for="limitlogin" class="tickoff"><span role="heading" aria-level="4">Limit Login Attempts</span></label>
-                    <p>Sehr hilfreiches Plugin, das viele Attacken auf deine Seite schon im Keim ersticken kann.</p>
-                    <ul>
-                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/limit-login-attempts-reloaded/">Limit login attempts reloaded Plugin</a></li>
                     </ul>
                 </article>
             </section>
