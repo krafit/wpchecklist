@@ -359,25 +359,5 @@
             <p>2020 <a rel="noopener" target="_blank" href="https://simonkraft.de">Simon Kraft</a> | <a rel="nofollow" href="https://wpcheckliste.de/impressum">Impressum</a> | <a rel="nofollow" href="https://wpcheckliste.de/datenschutz">Datenschutz</a></p>
             <p>Based upon wpaudit.site by <a rel="noopener" target="_blank" href="https://auroobaahmed.com">Aurooba Ahmed</a> licensed under <a rel="noopener" target="_blank" href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a> – do what you want, give some credit, any derivatives must also be GPLv3.</p>
         </footer>
-        <script>
-            function closePopup() {
-                var element = document.getElementsByClassName("overlay");
-                console.log(element);
-                element[0].classList.remove("show");
-            }
-        </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                jQuery(".checklist-item input[type='checkbox']").change(function(){
-                    var a = jQuery(".checklist-item input[type='checkbox']");
-                    if(a.length == a.filter(":checked").length){
-                        setTimeout(function(){
-                            jQuery("#popup1").addClass("show").find(".close").focus();
-                        }, 400);
-                    }
-                });
-            });
-        </script>
-        <script type="text/javascript" src="/assets/jquery.min.js" async></script>
     </body>
 </html>
