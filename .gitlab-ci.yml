@@ -20,4 +20,4 @@ production:
 
     variables:
         DEPLOY_PATH: /sites/wpcheckliste.de/files/
-        DEPLOY_SERVER: okeanos.simonkraft.com
+        DEPLOY_SERVER: kronos.simonkraft.com
