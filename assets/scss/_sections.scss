@@ -34,6 +34,7 @@ input.section:checked + label.section-header:after {
     content: 'einblenden';
 }
 
+input#privacy-legal:checked ~ section.privacy-legal,
 input#formatting-seo:checked ~ section.formatting,
 input#performance:checked ~ section.performance,
 input#a11y:checked ~ section.a11y,
@@ -42,6 +43,7 @@ input#security:checked ~ section.security,
     display: none;
 }
 
+section.privacy-legal,
 section.formatting,
 section.performance,
 section.a11y,
@@ -56,6 +58,7 @@ section.security {
 }
 
 @media only screen and (min-width: 850px) {
+    section.privacy-legal,
     section.formatting,
     section.performance,
     section.a11y,
