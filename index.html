@@ -234,6 +234,15 @@
                     </ul>
                 </article>
                 <article class="checklist-item">
+                    <input id="bfsg" type="checkbox">
+                    <label for="bfsg" class="tickoff"><span role="heading" aria-level="4">Barrierefreiheitsstärkungsgesetz (BFSG)</span></label>
+                    <p>Seit dem <strong>28. Juni 2025</strong> gilt in Deutschland das Barrierefreiheitsstärkungsgesetz. Es verpflichtet viele Anbieter von Websites und digitalen Dienstleistungen, die Anforderungen der <strong>WCAG 2.1 auf Stufe AA</strong> zu erfüllen. Prüfe, ob deine Website betroffen ist und welche Anforderungen für dich gelten!</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://www.bfsg-gesetz.de/">BFSG Übersicht</a> – Informationen zum Gesetz und wer es betrifft.</li>
+                        <li><a rel="noopener" target="_blank" href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG-Richtlinien</a> – die zugrundeliegenden Anforderungen im Detail.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
                     <input id="traffic" type="checkbox">
                     <label for="traffic" class="tickoff"><span role="heading" aria-level="4">Besucher*innen Statistik - ganz legal</span></label>
                     <p>In vielen Fällen sind Infos über die Besucher*innen deiner Website interessant. Wie viele kommen vorbei, und welche Beiträge und Seiten sehen sie an? Während die meisten Tracking-Lösungen auf Cookies setzen und die Privatsphäre deiner Besucher*innen gefährden, kannst du mit Plugins wie Statify sicher und zuverlässig einfache Statistiken erheben. Hast du ein Statistik-Tool aktiv und ist es datensicher?</p>
@@ -252,16 +261,12 @@
                 <article class="checklist-item">
                     <input id="local-fonts" type="checkbox">
                     <label for="local-fonts" class="tickoff"><span role="heading" aria-level="4">Keine externen Webfonts verdammt nochmal!</span></label>
-                    <p>Auch wenn die ersten Abmahnwellen rund um Google-Fonts sich wieder gelegt haben, ist es einfach nicht ratsam Webfonts von externen Quellen zu laden. Ähnlich wie mit anderen externen Inhalten werden auch beim Laden von Webfonts personenbezogene Daten an Dritte übermittelt ohne, dass deine Besucher*innen explizit zugestimmt haben. Vermeide den Einsatz externer Webfonts daher und lade sie lokal von deinem eigenen Server. (Ja, das gilt auch für andere Anbieter wie zum Beispiel Typekit!)
-                    </p>
+                    <p>Auch wenn die ersten Abmahnwellen rund um Google Fonts sich wieder gelegt haben, ist es einfach nicht ratsam, Webfonts von externen Quellen zu laden. Beim Laden von Webfonts werden personenbezogene Daten an Dritte übermittelt, ohne dass deine Besucher*innen explizit zugestimmt haben. Lade sie lokal von deinem eigenen Server. (Ja, das gilt auch für andere Anbieter wie Typekit/Adobe Fonts!)</p>
                     <ul>
-                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/custom-fonts/">Custom
-                        Fonts Plugin</a> – relativ wenig Code-lastige Lösung zum Lokalen Laden von Fonts</li>
-                        <li><a rel="noopener" target="_blank" href="https://kinsta.com/de/blog/lokaler-schriftarten/">Ausführliche Anleitung zum Hosten lokaler Schriftarten in WordPress</a> – ein hilfreiches Tutorial zum einfachen lokal Hosten von Webfonts in WordPress.</li>
-                        <li><a rel="noopener" target="_blank"
-                        href="https://blog.logrocket.com/self-hosted-fonts-vs-google-fonts-api/">Self-hosted fonts
-                        vs. Google Fonts API</a> – ein einfacher Guide für lokal gehostete Google Fonts.</li>
-
+                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/custom-fonts/">Custom Fonts Plugin</a> – relativ wenig Code-lastige Lösung zum lokalen Laden von Fonts.</li>
+                        <li><a rel="noopener" target="_blank" href="https://kinsta.com/de/blog/lokaler-schriftarten/">Ausführliche Anleitung zum Hosten lokaler Schriftarten in WordPress</a> – ein hilfreiches Tutorial.</li>
+                        <li><a rel="noopener" target="_blank" href="https://blog.logrocket.com/self-hosted-fonts-vs-google-fonts-api/">Self-hosted fonts vs. Google Fonts API</a> – ein einfacher Vergleich.</li>
+                        <li><a rel="noopener" target="_blank" href="https://webbkoll.dataskydd.net/de">Webbkoll</a> – zeigt dir schnell, ob und welche externen Ressourcen (inkl. Fonts) deine Seite lädt.</li>
                     </ul>
                 </article>
             </section>
@@ -293,13 +298,21 @@
                     </ul>
                 </article>
                 <article class="checklist-item">
+                    <input id="structured-data" type="checkbox">
+                    <label for="structured-data" class="tickoff"><span role="heading" aria-level="4">Strukturierte Daten (Schema.org)</span></label>
+                    <p>Mit strukturierten Daten gibst du Suchmaschinen (und KI-Systemen) explizit Kontext darüber, was deine Seite enthält – z.&nbsp;B. ob es sich um einen Artikel, eine Person, ein Produkt oder eine Veranstaltung handelt. Das kann zu Rich Results in den Suchergebnissen führen und verbessert die Sichtbarkeit deutlich.</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/schema-and-structured-data-for-wp/">Schema &amp; Structured Data for WP</a> – Plugin zur einfachen Implementierung strukturierter Daten.</li>
+                        <li><a rel="noopener" target="_blank" href="https://search.google.com/test/rich-results">Rich Results Test</a> – prüft, ob deine strukturierten Daten korrekt erkannt werden.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
                     <input id="metatags" type="checkbox">
                     <label for="metatags" class="tickoff"><span role="heading" aria-level="4">Meta-Tags</span></label>
                     <p>Wenn du ein SEO-Plugin installiert und richtig konfiguriert hast, solltest du hier eigentlich keine Probleme haben. Aber wirf doch trotzdem nochmal einen Blick darauf und stell sicher, dass es mit den Meta-Tags auf deiner Seite keinen Ärger gibt.</p>
                     <ul>
-                        <li><a rel="noopener" target="_blank" href="https://www.heymeta.com">Hey Meta</a> – zeigt dir, wie deine Seite in Social-Media aussieht und was für Basis-Tags du hast.</li>
-                        <li><a rel="noopener" target="_blank" href="https://developers.facebook.com/tools/debug/sharing/">Facebook debugger</a> – zeigt dir <em>ganz genau</em> wie deine Seite auf Facebook aussieht und lässt sich sogar den Facebook-Cache für deine Seite leeren, wenn du etwas änderst.</li>
-                        <li><a rel="noopener" target="_blank" href="https://cards-dev.twitter.com/validator">Twitter Card Validator</a> – hilft dir beim Testen der Twitter-Vorschau deiner Seite.</li>
+                        <li><a rel="noopener" target="_blank" href="https://www.heymeta.com">Hey Meta</a> – zeigt dir, wie deine Seite in Social Media aussieht und was für Basis-Tags du hast.</li>
+                        <li><a rel="noopener" target="_blank" href="https://developers.facebook.com/tools/debug/sharing/">Facebook Debugger</a> – zeigt dir <em>ganz genau</em> wie deine Seite auf Facebook aussieht.</li>
                     </ul>
                 </article>
                 <article class="checklist-item">
@@ -358,8 +371,8 @@
 					<pre><code>body { filter: grayscale(100%); }</code></pre>
 					<p>Aber natürlich gibt es auch hier eine Menge praktische Werkzeuge!</p>
                     <ul>
-                        <li><a rel="noopener" target="_blank" href="https://krautpress.de/2020/farbkontraste-testen/">Farbkontraste auf Barrierefreiheit testen</a> - Aritkel zur Benutzung des der Website "Who can use?"</li>
-                        <li><a rel="noopener" target="_blank" href="http://www.checkmycolours.com/">Check my colours</a></li>
+                        <li><a rel="noopener" target="_blank" href="https://krautpress.de/2020/farbkontraste-testen/">Farbkontraste auf Barrierefreiheit testen</a> – Artikel zur Benutzung von „Who Can Use".</li>
+                        <li><a rel="noopener" target="_blank" href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a> – schneller, zuverlässiger Kontrast-Check nach WCAG-Kriterien.</li>
                     </ul>
                 </article>
                 <article class="checklist-item">
@@ -399,16 +412,33 @@
                     <label for="alttext" class="tickoff"><span role="heading" aria-level="4">Alt-Texte wären gut.</span></label>
                     <p>Schau nach, ob deine Bilder mit sinnvollen <code>alt</code>-Texten ausgestattet sind.</p>
                     <ul>
-                        <li><a rel="noopener" target="_blank" href="https://www.seoptimer.com/alt-tag-checker">Alt Tag checker</a> – Testet einzelne URLs.</li>
+                        <li><a rel="noopener" target="_blank" href="https://www.seoptimer.com/alt-tag-checker">Alt Tag checker</a> – testet einzelne URLs.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="reduced-motion" type="checkbox">
+                    <label for="reduced-motion" class="tickoff"><span role="heading" aria-level="4">Animationen respektvoll einsetzen</span></label>
+                    <p>Für Menschen mit Gleichgewichts- oder Vestibularstörungen können Animationen und bewegte Inhalte belastend sein. Nutze die CSS-Media-Query <code>prefers-reduced-motion</code>, um Animationen zu reduzieren oder ganz abzuschalten, wenn Nutzer*innen das in ihrem Betriebssystem so eingestellt haben.</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">prefers-reduced-motion auf MDN</a> – Referenz und Beispiele zur Umsetzung.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="wave" type="checkbox">
+                    <label for="wave" class="tickoff"><span role="heading" aria-level="4">Automatisierte Barrierefreiheitstests</span></label>
+                    <p>Kein automatisches Tool kann einen echten Test ersetzen – aber als erster Schritt sind sie sehr hilfreich, um offensichtliche Probleme schnell zu finden.</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://wave.webaim.org/">WAVE Web Accessibility Tool</a> – zeigt Barrierefreiheitsfehler direkt auf deiner Seite an, einsteigerfreundlich und kostenlos.</li>
+                        <li><a rel="noopener" target="_blank" href="https://www.deque.com/axe/devtools/">Axe DevTools</a> – Browser-Extension für präzise, entwicklerorientierte Barrierefreiheits-Audits.</li>
                     </ul>
                 </article>
                 <article class="checklist-item">
                     <input id="lighthouse" type="checkbox">
                     <label for="lighthouse" class="tickoff"><span role="heading" aria-level="4">Mach einen Lighthouse-Test</span></label>
-                    <p>Lighthouse ist Googles Website-Testing-Tool. Es testet Performance, Barrierefreiheit usw.</p>
+                    <p>Lighthouse ist Googles Website-Testing-Tool, direkt im Chrome DevTools integriert. Es testet Performance, Barrierefreiheit, SEO und Best Practices in einem Durchlauf.</p>
                     <ul>
-                        <li><a rel="noopener" target="_blank" href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a></li>
-                        <li><a rel="noopener" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a></li>
+                        <li><a rel="noopener" target="_blank" href="https://developer.chrome.com/docs/lighthouse/overview">Lighthouse Dokumentation</a></li>
+                        <li><a rel="noopener" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a> – Lighthouse-Test online, ohne Browser-Extension.</li>
                     </ul>
                 </article>
             </section>
