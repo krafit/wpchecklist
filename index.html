@@ -134,12 +134,25 @@
             <label for="performance" class="section-header"><span role="heading" aria-level="3">Performance und Ladezeit</span></label>
             <section class="performance" aria-label="Performance-Checkliste">
                 <article class="checklist-item">
-                    <input id="gzip" type="checkbox">
-                    <label for="gzip" class="tickoff"><span role="heading" aria-level="4">GZip-Kompression</span></label>
-                    <p>Wird deine Seite schon GZip-komprimiert ausgegeben? Bei Gzip handelt es sich um eine clevere Art die Daten, für deine Website schneller zu übertragen. Moderne Web-Browser fragen automatisch zuerst die Gzip-Version der Daten von deinem Server an.</p> <p>Die meisten WordPress-freundlichen Hoster haben GZip schon aktiviert. Kontrollieren solltest du es trotzdem nochmal. Wenn du GZip nicht auf Server-Ebene aktivieren kannst, hilft dir ein Plugin:</p>
+                    <input id="coreweb" type="checkbox">
+                    <label for="coreweb" class="tickoff"><span role="heading" aria-level="4">Core Web Vitals</span></label>
+                    <p>Google bewertet Websites seit 2021 anhand der <strong>Core Web Vitals</strong> – drei Kennzahlen, die messen, wie schnell und stabil deine Seite für echte Nutzer*innen ist. Schau sie dir an und versuche, in den grünen Bereich zu kommen:</p>
                     <ul>
-                        <li><a rel="noopener" target="_blank" href="https://www.giftofspeed.com/gzip-test/">Gzip-Compression-Checker</a> – hilft dir, zu überprüfen, ob deine Seite per GZip ausgeliefert wird.</li>
-                        <li><a rel="noopener" target="_blank" href="https://torquemag.io/2016/04/enable-gzip-compression-wordpress/">How To Easily Enable Gzip Compression For WordPress</a> – praktischer Artikel der erklärt, warum genau GZip super ist und was du tun musst.</li>
+                        <li><strong>LCP</strong> (Largest Contentful Paint) – Wie schnell lädt das größte sichtbare Element?</li>
+                        <li><strong>INP</strong> (Interaction to Next Paint) – Wie schnell reagiert die Seite auf Eingaben?</li>
+                        <li><strong>CLS</strong> (Cumulative Layout Shift) – Wie stabil ist das Layout beim Laden?</li>
+                    </ul>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a> – zeigt dir deine Core Web Vitals auf einen Blick.</li>
+                        <li><a rel="noopener" target="_blank" href="https://web.dev/explore/vitals">web.dev: Core Web Vitals</a> – ausführliche Dokumentation zu allen drei Metriken.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="gzip" type="checkbox">
+                    <label for="gzip" class="tickoff"><span role="heading" aria-level="4">Kompression: Brotli oder GZip</span></label>
+                    <p>Wird deine Seite komprimiert ausgeliefert? Moderner Standard ist heute <strong>Brotli</strong>, das deutlich effizienter als GZip komprimiert. Alle gängigen Browser unterstützen es. Die meisten WordPress-freundlichen Hoster haben Brotli oder zumindest GZip bereits aktiviert – prüfe das trotzdem.</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://www.giftofspeed.com/gzip-test/">Compression Checker</a> – prüft, ob und mit welchem Verfahren deine Seite komprimiert ausgeliefert wird.</li>
                     </ul>
                 </article>
                 <article class="checklist-item">
@@ -153,22 +166,21 @@
                 <article class="checklist-item">
                     <input id="images" type="checkbox">
                     <label for="images" class="tickoff"><span role="heading" aria-level="4">Kleine kleine Bilder</span></label>
-                    <p>Optimiere die Bilder auf deiner Seite! Sie sollten so klein wie möglich ausgeliefert werden und im Optimalfall mittels Lazy Loading nachgeladen werden. Bei vielen Websites hat das enorme Auswirkungen auf die Ladezeit.</p>
+                    <label for="images" class="tickoff"><span role="heading" aria-level="4">Kleine Bilder, moderne Formate</span></label>
+                    <p>Optimiere die Bilder auf deiner Seite! Nutze moderne Formate: WordPress generiert automatisch <strong>WebP</strong>-Varianten – aktiviere das in deinen Medieneinstellungen. Für noch bessere Kompression ist <strong>AVIF</strong> die nächste Stufe. Außerdem sollten Bilder per <strong>Lazy Loading</strong> nachgeladen werden – das ist in WordPress nativ eingebaut und braucht kein extra Plugin mehr.</p>
                     <ul>
-                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/imagify/">Imagify</a> – ist ein tolles Plugin zur Bildkompression direkt in WordPress. Neben einigen kostenpflichtigen Tarifen gibts auch einen kostenlosen für Gelegenheitsnutzer/innen.</li>
-                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/lazy-loading-responsive-images/">Lazy Loader</a> – einfaches Lazy Loading ohne überflüssige Optionen.</li>
-                        <li><a rel="noopener" target="_blank" href="https://compresspng.com/">Compress PNG</a> – mit diesem Online-Tool kannst du deine Bilder manuell komprimieren.</li>
-                        <li><a rel="noopener" target="_blank" href="https://tinypng.com/">TinyPNG</a> – ein weiteres großartiges Online-Tool zur manuellen Kompression.</li>
-                        <li><a rel="noopener" target="_blank" href="https://imageoptim.com/mac">ImageOptim</a> – Mac-App zur schnellen Offline-Bildkompression von Bildern aller Art.</li>
+                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/imagify/">Imagify</a> – kostenpflichtiges Plugin zur Bildkompression und WebP-/AVIF-Konvertierung direkt in WordPress.</li>
+                        <li><a rel="noopener" target="_blank" href="https://compresspng.com/">Compress PNG</a> – Online-Tool zur manuellen Kompression.</li>
+                        <li><a rel="noopener" target="_blank" href="https://imageoptim.com/mac">ImageOptim</a> – Mac-App zur schnellen Offline-Bildkompression.</li>
                     </ul>
                 </article>
                 <article class="checklist-item">
                     <input id="fonts" type="checkbox">
                     <label for="fonts" class="tickoff"><span role="heading" aria-level="4">Webfonts optimieren</span></label>
-                    <p>Die Webfonts deiner Website schnell und <em>richtig</em> zu laden ist wichtig. Achte darauf, dass du nur das lädst, was du wirklich brauchst und nutze <code>preconnect</code> um die Dateien schneller zu laden und <a rel="noopener" target="_blank" href="https://css-tricks.com/fout-foit-foft/">das <strong>Aufblitzen von ungestyltem Text</strong> und <strong>unsichtbarem Text</strong></a> zu vermeiden.</p>
+                    <p>Die Webfonts deiner Website schnell und <em>richtig</em> zu laden ist wichtig. Lade nur das, was du wirklich brauchst. Nutze <code>font-display: swap</code> in deinem CSS, damit Text sofort mit einem Fallback-Font angezeigt wird und <a rel="noopener" target="_blank" href="https://css-tricks.com/fout-foit-foft/">das <strong>Aufblitzen von unsichtbarem Text</strong></a> vermieden wird. Für self-hosted Fonts hilft außerdem <code>preload</code> im <code>&lt;head&gt;</code>, um die Schrift früher zu laden.</p>
                     <ul>
-                        <li><a rel="noopener" target="_blank" href="https://www.cdnplanet.com/blog/faster-google-webfonts-preconnect/">Preconnect fonts</a> – wie du deine Fonts schneller laden kannst</li>
-                        <li><a rel="noopener" target="_blank" href="https://github.com/typekit/webfontloader">WebFont Loader</a> – nutze diese einfache Library, um das Laden deiner Webfonts zu verbessern.</li>
+                        <li><a rel="noopener" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display">font-display auf MDN</a> – Referenz zur Verwendung von <code>font-display: swap</code>.</li>
+                        <li><a rel="noopener" target="_blank" href="https://www.cdnplanet.com/blog/faster-google-webfonts-preconnect/">Preconnect fonts</a> – wie du deine Fonts schneller laden kannst.</li>
                     </ul>
                 </article>
                 <article class="checklist-item">
@@ -183,10 +195,11 @@
                 <article class="checklist-item">
                     <input id="co2" type="checkbox">
                     <label for="co2" class="tickoff"><span role="heading" aria-level="4">CO₂</span></label>
-                    <p>Wenn deine Seite aufgerufen wird, verbraucht das Strom und sorgt dafür, dass CO₂ ausgestoßen wird. Schau dir an, wie viel CO₂-Ausstoß deine Website bei jedem Aufruf verursacht und ob du den Wert vielleicht verbessern kannst.</p>
+                    <p>Wenn deine Seite aufgerufen wird, verbraucht das Strom und sorgt dafür, dass CO₂ ausgestoßen wird. Schau dir an, wie viel CO₂-Ausstoß deine Website bei jedem Aufruf verursacht und ob du den Wert vielleicht verbessern kannst. Nachhaltige Hoster, die auf erneuerbaren Strom setzen, können den Wert deutlich verbessern.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://simon.blog/2019/wordpress-web-und-klima/">WordPress, das Web und das Klima</a> – mein recht umfassender Blog-Artikel zum Thema klimafreundliche Websites.</li>
-                        <li><a rel="noopener" target="_blank" href="https://www.websitecarbon.com">Website Carbon Calculator</a> – einfaches tool zur CO₂-Messung deiner Website.</li>
+                        <li><a rel="noopener" target="_blank" href="https://www.websitecarbon.com">Website Carbon Calculator</a> – einfaches Tool zur CO₂-Messung deiner Website.</li>
+                        <li><a rel="noopener" target="_blank" href="https://www.thegreenwebfoundation.org/">Green Web Foundation</a> – prüft, ob dein Hoster auf grünen Strom setzt.</li>
                     </ul>
                 </article>
                 <article class="checklist-item">
