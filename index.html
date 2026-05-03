@@ -61,7 +61,7 @@
                     <label for="backups" class="tickoff"><span role="heading" aria-level="4">Regelmäßige Backups</span></label>
                     <p>Jemand oder etwas sollte regelmäßig ein Backup deiner Seite anlegen. Und damit meine ich nicht auf demselben Server. Wenn deine Backups nur auf dem System liegen, auf dem deine Website läuft, gehen sie im schlimmsten Fall zusammen mit der Website verloren.</p>
                     <ul>
-                        <li><a rel="noopener" target="_blank" href="http://de.wordpress.org/plugins/backwpup/">BackWPup</a> – Backup-Plugin mit vielen Möglichkeiten für Off-Site-Backups.</li>
+                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/updraftplus/">UpdraftPlus</a> – Backup-Plugin mit vielen Möglichkeiten für Off-Site-Backups.</li>
                     </ul>
                 </article>
                 <article class="checklist-item">
@@ -85,7 +85,7 @@
                 <article class="checklist-item">
                     <input id="update" type="checkbox">
                     <label for="update" class="tickoff"><span role="heading" aria-level="4">Themes und Plugins aktualisieren</span></label>
-                    <p>Halte deine Plugins und Themes auf dem neuesten Stand. Vorab solltest du aber ein Backup der Installation machen. Bonuspunkte gibt es für einen Test auf einem Testsystem.</p>
+                    <p>Halte deine Plugins und Themes auf dem neuesten Stand. Vorab solltest du aber ein Backup der Installation machen. Bonuspunkte gibt es für einen Test auf einem Staging-System – viele moderne Hoster bieten das inzwischen direkt an.</p>
                 </article>
                 <article class="checklist-item">
                     <input id="strongp" type="checkbox">
@@ -111,6 +111,22 @@
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/limit-login-attempts-reloaded/">„Limit login attempts reloaded“-Plugin</a></li>
                     </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="security-headers" type="checkbox">
+                    <label for="security-headers" class="tickoff"><span role="heading" aria-level="4">Security Headers setzen</span></label>
+                    <p>HTTP-Sicherheits-Header wie <code>Content-Security-Policy</code>, <code>X-Frame-Options</code> oder <code>Referrer-Policy</code> schützen deine Besucher*innen vor einer Reihe von Angriffen, ohne dass du viel konfigurieren musst. Prüfe, ob dein Server diese bereits sendet – und ergänze fehlende.</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://securityheaders.com/">Security Headers Checker</a> – gibt dir eine schnelle Übersicht, welche Header gesetzt sind und welche fehlen.</li>
+                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/security-headers/">„Security Headers“-Plugin</a> – einfache Möglichkeit, die wichtigsten Header ohne Server-Zugriff zu setzen.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="securityplugin" type="checkbox">
+                    <label for="securityplugin" class="tickoff"><span role="heading" aria-level="4">Wie wäre es mit einem allgemeinen Security-Plugin?</span></label>
+                    <p>Basierend auf der Komplexität und Wichtigkeit deines Projekts wäre ein umfassende Security-Plugin vielleicht nicht schlecht.</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://de.wordpress.org/plugins/patchstack/">Patchstack</a></li>
                 </article>
             </section>
 
